@@ -27,4 +27,24 @@ public class Utilidades {
         return resp;
     }
 
+    public static double desviacionEstandar(double[] datos) {
+        int n = datos.length;
+        if (n == 0) return 0; // Evitar división por cero
+                // Calcular el promedio (media)
+        double suma = 0;
+        for (double dato : datos) {
+            suma += dato;
+        }
+        double promedio = suma / n;
+
+        // Calcular la suma de las diferencias al cuadrado
+        double sumaDiferencias = 0;
+        for (double dato : datos) {
+            sumaDiferencias += Math.pow(dato - promedio, 2);
+        }
+
+        // Calcular la desviación estándar
+        return Math.sqrt(sumaDiferencias / n);
+    }
+
 }
