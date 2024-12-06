@@ -6,8 +6,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-import util.Utilidades;
-
 public class PreguntasTestIQ {
 
     // Método para leer y presentar preguntas desde un archivo txt
@@ -48,25 +46,7 @@ public class PreguntasTestIQ {
         
     }
    
-        // Método para identificar la respuesta correcta en una línea de texto
-        public static float identificarRespuestaCorrecta(String linea) {
-            //Retornar un float
-            float totalAciertos = 0.0f;
-            //Condicion que se usa para identificar si la respuesta contiene Æ (es respuesta correcta)
-            if (linea.contains("Æ")) {
-                // Arreglo con split para identificar la respuesta correcta
-                String[] respuestaCorrecta = linea.split("Æ");
-                //Bucle para las respuestas correctas
-                for (int aciertos = 0; aciertos < respuestaCorrecta.length; aciertos++) {
-                    //Transformar el string a float, usando trim para quitar los espacios
-                   float valor = Utilidades.transformStringFloat(respuestaCorrecta[aciertos].trim()); 
-                   //Numero de aciertos
-                   totalAciertos += valor;
-                }
-            }
-            return totalAciertos;
         }
-    }
     
 
 
