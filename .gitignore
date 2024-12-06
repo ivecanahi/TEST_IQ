@@ -1,0 +1,18 @@
+# Ignorar archivos del sistema
+Thumbs.db
+Desktop.ini
+
+# Ignorar directorios del sistema operativo
+AppData/
+OneDrive/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+
+# Ignorar la configuración de VSCode
+.vscode/
+
+# Ignorar archivos de log
+*.log
