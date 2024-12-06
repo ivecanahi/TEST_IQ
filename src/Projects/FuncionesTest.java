@@ -4,6 +4,7 @@ public class FuncionesTest {
 
     public static void calculoTotal() {
         // Llamar el metodo para identificar la respuesta correcta
+        
         // Variables a utilizar
         float totalAciertos = 0.0f;
         float totalMedia = 0.0f;
@@ -13,10 +14,8 @@ public class FuncionesTest {
         //ACIERTOS TOTALES
         // Asignar una cadena vacia a linea
         String linea = "";
-        //Llamar el metodo del valor de total de aciertos 
-        totalAciertos = PreguntasTestIQ.identificarRespuestaCorrecta(linea);
-        System.out.println("Total de aciertos: " + totalAciertos);
 
+        
         //MEDIA TOTAL
         totalMedia = totalAciertos / numeroPreguntas;
         System.out.println("La media total de sus aciertos es de: " +totalMedia);
