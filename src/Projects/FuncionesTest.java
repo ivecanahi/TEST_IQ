@@ -1,5 +1,8 @@
 package Projects;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class FuncionesTest {
 
     public static void calculoTotal() {
@@ -35,6 +38,23 @@ public class FuncionesTest {
         //IQ = (Aciertos - media / desviacion estandar) * 15 + 100
         
 
-    }
 
+    public static int generarAleatorio(int min, int max) {
+        //metodo para generar pregunta de manera aleatoria
+        Random random = new Random(); 
+        return random.nextInt(((max - min) + 1) + min);//le sumamos 1 y min para que elija entre el rango de numero max y numero min
+        //retornamos el numero elegido de manera aleatoria
+    }
+    public static char readChar(String mensaje) {
+        //metodo para leer el caracter o respuesta ingresado por el usuario
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(mensaje);
+        char caracter = scanner.next().trim().charAt(0);//elije como indice el primer caracter
+        //lee el mensaje, luego ignora los espacios que esten antes y despues de el char ingresado por el usuario
+        return Character.toLowerCase(caracter);
+        //retorna el char en Mayuscula
+    }
 }
+    
+
+
