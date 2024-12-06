@@ -1,15 +1,15 @@
-¿Cual es el número que sigue en esta secuencia? 2, 6, 4, 12, ___ @ a) Æ 8 @ b) 10 @ c) 11 @ o d) 12 
-Encuentra las letras diferentes: ABUIO o @ a) Primera @ b) Æ Segunda @ c) Tercera @ d) Cuarta 
-¿Que letra falta en esta secuencia? Ax, Cv, Et, Gr, ___ @ a) Fh @ b) Gp @ c) Cg @ d) Æ Hp 
-¿Cual es la hora en el reloj si son las 3 menos 15 minutos? @ a) 3:15 @ o b) 3:00 @ o c) Æ 2:45 @ d) 2:30
-¿Que palabra no pertenece al grupo? Manzano, Rosa, Tulipán, Lirio @ a) Rosa @ b) Tulipán @ o c) Lirio @d) Æ Manzano 
-Completa la serie: 5, 10, 20, 30, ___ @ a) 60 @ b) 70 @ c) Æ 80 @ d) 100 
-Encuentra el error en la siguiente frase: "El auto esta muy barato". @ a) Un acento @ o b) Palabra mal escrita @ o c) Æ Esta correcto @ o d) Frase incompleta
-Identifica la figura que sigue: A1, C2, B3, D4, ___ @ a) C6 @ b) D4 @ c) Æ C5 @ d) E5 
-Un tren sale de la estacion a las 8:30 y llega a las 11:15. ¿Cuánto dura el viaje? @ a) 2 horas y 30 minutos @ o b) Æ 2 horas y 45 minutos @ c) 3 horas @ d) 3 horas y 15 minutos 
-Encuentra la palabra diferente: Cocodrilo, Mariposa, Amarillo, Mesa @ a) Cocodrilo @ b) Mariposa @ c) Amarillo @ d) Æ Mesa 
-Si 7 + 3 = 15 y 4 + 2 = 10, entonces 6 + 5 = ___ @ a) 20 @  b) 18 @  c) Æ 21 @  d) 15 
-12. En un texto de 100 palabras, se repite la palabra "sol" 7 veces. Si duplica el texto, cuantas veces aparecerá "sol"? @ a) 7 @  b) Æ 14 @ c) 21 @ d) 28 
-13. Completa la serie: 1, 2, 4, 7, 11, ___ @ a) 15 @ b) Æ 16 @ c) 17 @ d) 18 
-14. En una habitacion hay 8 sillas, 4 mesas y 2 lámparas. Cuantas patas hay en total, suponiendo que cada silla tiene 4 patas, cada mesa tiene 4 patas y las lamparas no tienen patas? @ a) 48 @  b) Æ 32 @c) 40 @ d) 28 
-15. ¿Cuál es el numero que sigue en esta secuencia? 2, 6, 12, 20, 30, ___ @ a) 40 @  b) Æ 42 @ c) 45 @  d) 50 
+Pregunta 1. Completa la analogía: Sol es a día como Luna es a...@a) NocheÆ@b) Oscuridad@c) Cielo@d) Brillo
+Pregunta 2. ¿Qué palabra es un antónimo de 'enérgico'?@a) Activo@b) Animado@c) ApáticoÆ@d) Energético
+Pregunta 3. ¿Qué significa la palabra 'eufonía'?@a) Armonía de sonidosÆ@b) Mal sonido@c) Falta de ruido@d) Ruido fuerte
+Pregunta 4. Completa la relación: Libro es a lectura como comida es a...@a) DegustarÆ@b) Sabor@c) Cocinar@d) Alimentación
+Pregunta 5. ¿Cuál es un sinónimo de 'perspicaz'?@a) Lento@b) SagazÆ@c) Descuidado@d) Simple
+Pregunta 6. ¿Qué palabra no pertenece al grupo? [Casa, Edificio, Árbol, Cabaña]@a) Casa@b) Edificio@c) ÁrbolÆ@d) Cabaña
+Pregunta 7. Si 'pluma' es a 'escribir', entonces 'martillo' es a...@a) Construir@b) Reparar@c) GolpearÆ@d) Martillo
+Pregunta 8. ¿Cuál es el significado de la palabra 'empático'?@a) Cruel@b) ComprensivoÆ@c) Apático@d) Egoísta
+Pregunta 9. ¿Qué palabra es un antónimo de 'sincero'?@a) Auténtico@b) DeshonestoÆ@c) Abierto@d) Franco
+Pregunta 10. ¿Qué palabra completa la frase: La paciencia es una virtud de los ______?@a) SabiosÆ@b) Valientes@c) Felices@d) Pacientes
+Pregunta 11. Completa la analogía: Ojo es a ver como oído es a ______@a) EscucharÆ@b) Tocar@c) Sentir@d) Hablar
+Pregunta 12. ¿Qué significa la palabra 'intrépido'?@a) Cobarde@b) Intrigante@c) ValienteÆ@d) Miedoso
+Pregunta 13. ¿Cuál es un sinónimo de 'inmutable'?@a) Cambiante@b) FirmeÆ@c) Inconstante@d) Flexible
+Pregunta 14. ¿Qué palabra completa la relación: Médico es a salud como maestro es a...?@a) Aprender@b) EnseñarÆ@c) Estudio@d) Saber
+Pregunta 15. ¿Qué significa la palabra 'superfluo'?@a) Necesario@b) Relevante@c) SuperficialÆ@d) Abundante
