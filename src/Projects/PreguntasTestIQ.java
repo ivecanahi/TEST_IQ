@@ -35,15 +35,11 @@ public class PreguntasTestIQ {
                             // Presentar cada parte del arreglo separada
                             System.out.println(partes[i]);
                         }
-                        
-                    } 
-                   
+                    }  
             }} catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-
-        }
-        
+        }  
     }
    
         }
