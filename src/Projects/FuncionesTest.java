@@ -77,22 +77,7 @@ public class FuncionesTest {
         // Calcular la desviación estándar
         return Math.sqrt(sumaDiferencias / n);
     }
-     public static int realizarTest() {
-
-        Scanner scanner = new Scanner(System.in);
-        int Buenas = 0;
-        int PreguntaActual = 1;
-        int PreguntasTotales = 5; 
-
-        while (PreguntaActual <= PreguntasTotales) {
-            
-            System.out.println("Pregunta " + PreguntaActual + ": ¿Cuál es la respuesta correcta?");
-            System.out.println("a) Opción 1");
-            System.out.println("b) Opción 2");
-            System.out.println("c) Opción 3");
-            System.out.println("d) Opción 4");
-
-            System.out.print("Ingrese su respuesta (a, b, c, d): ");
+       System.out.print("Ingrese su respuesta (a, b, c, d): ");
             char respuesta = scanner.nextLine().toLowerCase().charAt(0);
 
             while (!Utilidades.respuestaValida(respuesta)) {
@@ -104,34 +89,16 @@ public class FuncionesTest {
             char respuestaCorrecta = obtenerLiteralCorrecto(PreguntaActual);
             if (respuesta == respuestaCorrecta) {
                 Buenas++;
-            }
-
-            PreguntaActual++;
-        }
-
-        System.out.println("Test finalizado. Total de aciertos: " + Buenas);
-        return Buenas;
-    }
-
-    public static char obtenerLiteralCorrecto(int numeroPregunta) {
+            }
+public static boolean respuestaValida(char respuesta) {
      
-        switch (numeroPregunta) {
-            case 1:
-                return 'a';
-            case 2:
-                return 'b';
-            case 3:
-                return 'c';
-            case 4:
-                return 'd';
-            case 5:
-                return 'a';
-            default:
-                return 'a';
+        respuesta = Character.toLowerCase(respuesta);
+
+        if (respuesta == 'a' || respuesta == 'b' || respuesta == 'c' || respuesta == 'd') {
+
+            return true;
         }
-    }
-}
-}
-    
 
-
+        return false;
+    }
+}
