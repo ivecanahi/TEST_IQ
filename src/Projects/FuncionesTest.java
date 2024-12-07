@@ -77,6 +77,60 @@ public class FuncionesTest {
         // Calcular la desviación estándar
         return Math.sqrt(sumaDiferencias / n);
     }
+     public static int realizarTest() {
+
+        Scanner scanner = new Scanner(System.in);
+        int Buenas = 0;
+        int PreguntaActual = 1;
+        int PreguntasTotales = 5; 
+
+        while (PreguntaActual <= PreguntasTotales) {
+            
+            System.out.println("Pregunta " + PreguntaActual + ": ¿Cuál es la respuesta correcta?");
+            System.out.println("a) Opción 1");
+            System.out.println("b) Opción 2");
+            System.out.println("c) Opción 3");
+            System.out.println("d) Opción 4");
+
+            System.out.print("Ingrese su respuesta (a, b, c, d): ");
+            char respuesta = scanner.nextLine().toLowerCase().charAt(0);
+
+            while (!Utilidades.respuestaValida(respuesta)) {
+                System.out.println("Respuesta inválida. Intente de nuevo.");
+                System.out.print("Ingrese su respuesta (a, b, c, d): ");
+                respuesta = scanner.nextLine().toLowerCase().charAt(0);
+            }
+
+            char respuestaCorrecta = obtenerLiteralCorrecto(PreguntaActual);
+            if (respuesta == respuestaCorrecta) {
+                Buenas++;
+            }
+
+            PreguntaActual++;
+        }
+
+        System.out.println("Test finalizado. Total de aciertos: " + Buenas);
+        return Buenas;
+    }
+
+    public static char obtenerLiteralCorrecto(int numeroPregunta) {
+     
+        switch (numeroPregunta) {
+            case 1:
+                return 'a';
+            case 2:
+                return 'b';
+            case 3:
+                return 'c';
+            case 4:
+                return 'd';
+            case 5:
+                return 'a';
+            default:
+                return 'a';
+        }
+    }
+}
 }
     
 
