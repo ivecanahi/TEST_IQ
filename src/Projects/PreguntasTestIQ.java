@@ -12,8 +12,8 @@ public class PreguntasTestIQ {
      *              string enviado al crear una instancia de esta clase
      */
     public PreguntasTestIQ(String linea) {
-        respuestas = new String[4];
-        ejecutarPreguntas(linea);
+        respuestas = new String[4]; //----> inicializa el arreglo de respuestas 
+        ejecutarPreguntas(linea); //----> procesa la linea 
     }
 
     /**
