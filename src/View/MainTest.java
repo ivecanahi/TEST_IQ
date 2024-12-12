@@ -1,7 +1,6 @@
 package View;
 
 import Projects.FuncionesTest;
-import Projects.PreguntasTestIQ;
 
 public class MainTest {
     public static void main(String[] args) {
@@ -22,7 +21,9 @@ public class MainTest {
 
         aciertosTotales += FuncionesTest.calculoAciertos(1, 1, 15, preguntas.length, preguntas);
         System.out.println("Aciertos de prueba" + aciertosTotales);
+        // logica de dificultad progresiva, primer for (i) define la dificultad de 1 a 3
         for (int i = 1; i <= 3; i++) {
+            // define los temas a tomar dependiendo de la dificultad considerada
             for (int j = 0; j < 6; j++) {
             }
         }

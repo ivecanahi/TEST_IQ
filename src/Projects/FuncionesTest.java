@@ -4,49 +4,73 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class FuncionesTest {
-//Sirve para calcular los aciertos dependiendo de las preguntas y respuestas
+    /**
+     * 
+     * @param dificultad        Define el puntaje que se acumulará al tomar las
+     *                          preguntas
+     * @param min               limite inferior de preguntas aleatorias que se
+     *                          considerarpa (no implementado)
+     * @param max               limite superior de preguntas aleatorias que se
+     *                          considerarpa (no implementado)
+     * @param cantidadPreguntas cantidad de preguntas que se tomará por cada tema
+     * @param lineas            Vector de prueba que contiene preguntas para
+     *                          comprobar el funcionamiento del programa
+     * @return devuelve la cantidad de aciertos
+     */
     public static int calculoAciertos(int dificultad, int min, int max, int cantidadPreguntas, String[] lineas) {
         // Variables que almacenará aciertos
-        int aciertos = 0; //----> Almacena aciertos
-        char respuesta; //----> Respuesta ingresada por el ususario
-        PreguntasTestIQ gestion; //-----> //Objeto para gestionar la pregunta 
-        String pregunta; //----> Pregunta que se irá actualizando conformemente 
-        String[] literales; //----> Opciones de respuesta con arreglos
-        //Bucle que se ejecutará desde 0 hasta la cantidad de preguntas 
+        int aciertos = 0; // ----> Almacena aciertos
+        char respuesta; // ----> Respuesta ingresada por el ususario
+        PreguntasTestIQ gestion; // -----> //Objeto para gestionar la pregunta
+        String pregunta; // ----> Pregunta que se irá actualizando
+        String[] literales; // ----> Opciones de respuesta con arreglos
+        // Bucle que se ejecutará desde 0 hasta la cantidad de preguntas
         for (int i = 0; i < cantidadPreguntas; i++) {
-            gestion = new PreguntasTestIQ(lineas[i]); //----> Objeto basado en linea actual
-            pregunta = gestion.getPregunta(); //-----> Obtiene la pregunta del objeto gestión anteriormente creado
-            literales = gestion.getRespuestas(); //----> Obtiene opciones de respuesta del objeto gestión
-            
-            //Inicializar un bucle para mostrar la pregunta y las opciones de respuesta, leer la respuesta ingresada por el usuario hasta que sea válida
+            gestion = new PreguntasTestIQ(lineas[i]); // ----> Objeto basado en linea actual
+            pregunta = gestion.getPregunta(); // -----> Obtiene la pregunta del objeto gestión anteriormente creado
+            literales = gestion.getRespuestas(); // ----> Obtiene opciones de respuesta del objeto gestión
+
+            // Inicializar un bucle para mostrar la pregunta y las opciones de respuesta,
+            // leer la respuesta ingresada por el usuario hasta que sea válida
             do {
-                System.out.println(pregunta); //----> Imprime la pregunta
+                System.out.println(pregunta); // ----> Imprime la pregunta
                 for (int j = 0; j < literales.length; j++) {
-                    System.out.println(literales[j]); //-----> Imprime opciones
+                    System.out.println(literales[j]); // -----> Imprime opciones
                 }
-                respuesta = readChar("Ingrese su respuesta (a, b, c, d): "); //----> Lee la respuesta del usuario
-                //Se repite si la respuesta no es válida
+                respuesta = readChar("Ingrese su respuesta (a, b, c, d): "); // ----> Lee la respuesta del usuario
+                // Se repite si la respuesta no es válida
             } while (!respuestaValida(respuesta));
-                //Verifica si la respuesta es correcta
+            // Verifica si la respuesta es correcta
             if (respuesta == literalCorrecto(gestion.getRespuestaCorrecta())) {
-                aciertos += dificultad; //----> acumula puntos
+                aciertos += dificultad; // ----> acumula puntos
             }
         }
         // Devuelve el total de aciertos obtenidos
         return aciertos;
     }
-    //Resumen del test 
+
+    /**
+     * genera un pequeño informe de los aciertos obtenidos
+     * 
+     * @param totalAciertos   aciertos totales obtenidos en el transcurso del test
+     * @param numeroPreguntas cantidad de preguntas evaluadas en el test
+     */
     public static void resumenTest(int totalAciertos, int numeroPreguntas) {
-        //Cálculo de Media 
+        // Cálculo de Media
         float totalMedia;
         totalMedia = (float) totalAciertos / numeroPreguntas;
         System.out.println("La media total de sus aciertos es de: " + totalMedia);
 
-        // Cálculo Porcentaje 
+        // Cálculo Porcentaje
         float porcentajeTotal = (float) (totalAciertos * 100) / (numeroPreguntas);
         System.out.println("Su porcentaje de aciertos es de: " + porcentajeTotal);
     }
-    //Método para verificar si la respuesta es válida 
+
+    /**
+     * @param respuesta Caracter ingresado a verificar si está dentro del rango a
+     *                  considerar
+     * @return true si es a,b,c ó d; false si no es cualquiera de ellos
+     */
     public static boolean respuestaValida(char respuesta) {
         if (respuesta == 'a' || respuesta == 'b' || respuesta == 'c' || respuesta == 'd') {
             return true;
@@ -54,10 +78,14 @@ public class FuncionesTest {
             return false;
         }
     }
-//Método para transformar el índice de la respuesta que es correcta al literal que le corresponde 
+
+    /**
+     * @param i Numero dentro de un rango de 1 a 4
+     * @return el caracter equivalente (a,d,c,d), de un numero en un rango de 1 a 4
+     */
     public static char literalCorrecto(int i) {
         switch (i) {
-            case 1: 
+            case 1:
                 return 'a';
             case 2:
                 return 'b';
@@ -65,12 +93,17 @@ public class FuncionesTest {
                 return 'c';
             case 4:
                 return 'd';
-            default: 
+            default:
                 return ' ';
         }
     }
 
-    // Metodo para generar pregunta de manera aleatoria entre min y max 
+    /**
+     * 
+     * @param min rango minimo para generar un aleatorio
+     * @param max rango maximo para generar un aleatorio
+     * @return un entero aleatorio dentro de un rango dado
+     */
     public static int generarAleatorio(int min, int max) {
         // Crear un objeto random
         Random random = new Random();
@@ -79,7 +112,11 @@ public class FuncionesTest {
         // Retornamos el numero elegido de manera aleatoria
     }
 
-    // Metodo para leer el caracter o respuesta ingresado por el usuario
+    /**
+     * 
+     * @param mensaje mensaje personalizado para leer un caracater
+     * @return un caracter leido por teclado
+     */
     public static char readChar(String mensaje) {
         // Crear Scanner
         @SuppressWarnings("resource")
@@ -93,7 +130,11 @@ public class FuncionesTest {
         // retorna el char en Mayuscula
     }
 
-    // funcion de desviacion estandar
+    /**
+     * 
+     * @param datos datos de pruebas tomadas
+     * @return desviacion estandar de los resultados obtenidos
+     */
     public static double desviacionEstandar(double[] datos) {
         int n = datos.length;
         if (n == 0)
