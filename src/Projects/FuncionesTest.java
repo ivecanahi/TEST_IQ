@@ -51,18 +51,18 @@ public class FuncionesTest {
     }
 
     public static char literalCorrecto(int i) {
-        return switch (i) {
-            case 1 ->
-                'a';
-            case 2 ->
-                'b';
-            case 3 ->
-                'c';
-            case 4 ->
-                'd';
-            default ->
-                ' ';
-        };
+        switch (i) {
+            case 1: 
+                return 'a';
+            case 2:
+                return 'b';
+            case 3:
+                return 'c';
+            case 4:
+                return 'd';
+            default: 
+                return ' ';
+        }
     }
 
     // Metodo para generar pregunta de manera aleatoria
