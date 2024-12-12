@@ -4,44 +4,49 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class FuncionesTest {
-
+//Sirve para calcular los aciertos dependiendo de las preguntas y respuestas
     public static int calculoAciertos(int dificultad, int min, int max, int cantidadPreguntas, String[] lineas) {
         // Variables que almacenará aciertos
-        int aciertos = 0;
-        char respuesta;
-        PreguntasTestIQ gestion;
-        String pregunta;
-        String[] literales;
+        int aciertos = 0; //----> Almacena aciertos
+        char respuesta; //----> Respuesta ingresada por el ususario
+        PreguntasTestIQ gestion; //-----> //Objeto para gestionar la pregunta 
+        String pregunta; //----> Pregunta que se irá actualizando conformemente 
+        String[] literales; //----> Opciones de respuesta con arreglos
+        //Bucle que se ejecutará desde 0 hasta la cantidad de preguntas 
         for (int i = 0; i < cantidadPreguntas; i++) {
-            gestion = new PreguntasTestIQ(lineas[i]);
-            pregunta = gestion.getPregunta();
-            literales = gestion.getRespuestas();
+            gestion = new PreguntasTestIQ(lineas[i]); //----> Objeto basado en linea actual
+            pregunta = gestion.getPregunta(); //-----> Obtiene la pregunta del objeto gestión anteriormente creado
+            literales = gestion.getRespuestas(); //----> Obtiene opciones de respuesta del objeto gestión
+            
+            //Inicializar un bucle para mostrar la pregunta y las opciones de respuesta, leer la respuesta ingresada por el usuario hasta que sea válida
             do {
-                System.out.println(pregunta);
+                System.out.println(pregunta); //----> Imprime la pregunta
                 for (int j = 0; j < literales.length; j++) {
-                    System.out.println(literales[j]);
+                    System.out.println(literales[j]); //-----> Imprime opciones
                 }
-                respuesta = readChar("Ingrese su respuesta (a, b, c, d): ");
+                respuesta = readChar("Ingrese su respuesta (a, b, c, d): "); //----> Lee la respuesta del usuario
+                //Se repite si la respuesta no es válida
             } while (!respuestaValida(respuesta));
-
+                //Verifica si la respuesta es correcta
             if (respuesta == literalCorrecto(gestion.getRespuestaCorrecta())) {
-                aciertos += dificultad;
+                aciertos += dificultad; //----> acumula puntos
             }
         }
-        // MEDIA TOTAL
+        // Devuelve el total de aciertos obtenidos
         return aciertos;
     }
-
+    //Resumen del test 
     public static void resumenTest(int totalAciertos, int numeroPreguntas) {
+        //Cálculo de Media 
         float totalMedia;
         totalMedia = (float) totalAciertos / numeroPreguntas;
         System.out.println("La media total de sus aciertos es de: " + totalMedia);
 
-        // PORCENTAJE TOTAL
+        // Cálculo Porcentaje 
         float porcentajeTotal = (float) (totalAciertos * 100) / (numeroPreguntas);
         System.out.println("Su porcentaje de aciertos es de: " + porcentajeTotal);
     }
-
+    //Método para verificar si la respuesta es válida 
     public static boolean respuestaValida(char respuesta) {
         if (respuesta == 'a' || respuesta == 'b' || respuesta == 'c' || respuesta == 'd') {
             return true;
@@ -49,7 +54,7 @@ public class FuncionesTest {
             return false;
         }
     }
-
+//Método para transformar el índice de la respuesta que es correcta al literal que le corresponde 
     public static char literalCorrecto(int i) {
         switch (i) {
             case 1: 
@@ -65,7 +70,7 @@ public class FuncionesTest {
         }
     }
 
-    // Metodo para generar pregunta de manera aleatoria
+    // Metodo para generar pregunta de manera aleatoria entre min y max 
     public static int generarAleatorio(int min, int max) {
         // Crear un objeto random
         Random random = new Random();
