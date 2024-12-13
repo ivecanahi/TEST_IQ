@@ -13,7 +13,7 @@ public class PreguntasTestIQ {
      */
     public PreguntasTestIQ(String linea) {
         respuestas = new String[4]; //----> inicializa el arreglo de respuestas 
-        ejecutarPreguntas(linea); //----> procesa la linea 
+        ejecutarPreguntas(linea); //----> procesa la linea, separa las preguntas, respuestas y aciertos
     }
 
     /**
