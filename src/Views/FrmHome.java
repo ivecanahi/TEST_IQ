@@ -71,6 +71,7 @@ public class FrmHome extends javax.swing.JFrame {
             btnPercepAten.setEnabled(false);
             btnRazonVerbal.setEnabled(false);
             btnRazonCuant.setEnabled(false);
+            btnInforme.setBackground(new java.awt.Color(0xD07AD0));
             btnInforme.setEnabled(true);
         }
     }
