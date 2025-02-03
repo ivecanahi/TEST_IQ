@@ -43,5 +43,13 @@ public class Salida extends AbstractTableModel{
             default: return null;
         }
     }
+    @Override
+    public String getColumnName(int i) {
+        switch(i){
+            case 0: return "TEMAS";
+            case 1: return "ACIERTOS";
+            default: return null;
+        }
+    }
     
 }
