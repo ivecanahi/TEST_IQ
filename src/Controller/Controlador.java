@@ -46,19 +46,23 @@ public class Controlador {
     
      public void mostrarMenu(int dificultad, int tema) {
         menu = new FrmHome(this, dificultad, tema);
+        menu.setLocationRelativeTo(null);   
         menu.setVisible(true);
     }
 
     public void mostrarFrmDificultad(int dificultad,int tema) {
         frmDificultad = new FrmDificultad(this, dificultad,tema);
+        frmDificultad.setLocationRelativeTo(null);   
         frmDificultad.setVisible(true);
     }
     public void mostrarFrmPrueba(int dificultad,int tema) {
         frmPrueba = new FrmTomarPrueba(this, dificultad,tema);
+        frmPrueba.setLocationRelativeTo(null);   
         frmPrueba.setVisible(true);
     }
     public void mostrarFrmInforme() {
         informe = new FrmFinal(this);
+        informe.setLocationRelativeTo(null);   
         informe.setVisible(true);
     }
     
