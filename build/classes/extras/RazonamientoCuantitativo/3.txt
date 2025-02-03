@@ -1,5 +1,0 @@
-Si 4^x = 64, ¿cuál es el valor de x?@a) 2@b) 3@c) 4@Æd) 5
-¿Cuál es el valor de la suma de los ángulos internos de un hexágono?@a) 540°@b) 720°@c) 900°@Æd) 1080°
-Resuelve la ecuación: log₂(x) = 5@a) 10@b) 20@c) 25@Æd) 32
-Si un número aumenta en un 20% y luego disminuye en un 20%, ¿cuál es el cambio neto?@a) Aumenta 4%@b) Disminuye 4%@c) No cambia@Æd) Disminuye 10%
-¿Cuál es el valor de la integral ∫(2x + 3) dx?@a) x² + 3x + C@b) 2x² + 3x + C@c) x² + C@Æd) 2x² + C

@@ -1,5 +1,0 @@
-Si un triángulo tiene lados de 5 cm, 12 cm y 13 cm, ¿qué tipo de triángulo es?@a) Equilátero@b) Isósceles@c) Escaleno@Æd) Rectángulo
-¿Cuál es el valor de x en la ecuación 3(x - 4) = 21?@a) 7@b) 9@c) 11@Æd) 13
-Si un coche recorre 240 km en 3 horas, ¿cuál es su velocidad promedio?@a) 60 km/h@b) 70 km/h@c) 80 km/h@Æd) 90 km/h
-¿Cuál es el área de un círculo con radio 7 cm? (Usa π = 3.14)@a) 153.86 cm²@b) 154.00 cm²@c) 155.00 cm²@Æd) 153.94 cm²
-¿Qué número falta en la secuencia: 3, 9, 27, ___?@a) 54@b) 81@c) 108@Æd) 243
