@@ -38,7 +38,6 @@ public class FuncionesTest {
         int cont = 0;
         for (int i = 0; i < 15; i++) {
             for (int j = 0; j < 5; j++) {
-                System.out.println(aciertos[i][j]);
                 if (aciertos[i][j] != 0) {
                     correctas[cont] = correctas[cont] + 1;
                 }
