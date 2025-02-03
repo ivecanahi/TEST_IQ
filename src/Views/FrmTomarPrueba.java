@@ -167,31 +167,36 @@ public enum dificultadLabel{PREGUNTAS_FACILES,PREGUNTAS_MEDIAS,PREGUNTAS_DIFICIL
         jPanel1.setBackground(new java.awt.Color(255, 204, 255));
         jPanel1.setMinimumSize(new java.awt.Dimension(500, 600));
 
+        op1.setBackground(new java.awt.Color(255, 204, 255));
         op1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 op1ActionPerformed(evt);
             }
         });
 
+        op2.setBackground(new java.awt.Color(255, 204, 255));
         op2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 op2ActionPerformed(evt);
             }
         });
 
+        op3.setBackground(new java.awt.Color(255, 204, 255));
         op3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 op3ActionPerformed(evt);
             }
         });
 
-        op4.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        op4.setBackground(new java.awt.Color(255, 204, 255));
         op4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 op4ActionPerformed(evt);
             }
         });
 
+        btnSiguiente.setBackground(new java.awt.Color(208, 122, 208));
+        btnSiguiente.setForeground(new java.awt.Color(51, 24, 51));
         btnSiguiente.setText("Siguiente");
         btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,6 +204,8 @@ public enum dificultadLabel{PREGUNTAS_FACILES,PREGUNTAS_MEDIAS,PREGUNTAS_DIFICIL
             }
         });
 
+        btnContinuar.setBackground(new java.awt.Color(208, 122, 208));
+        btnContinuar.setForeground(new java.awt.Color(51, 24, 51));
         btnContinuar.setText("Continuar");
         btnContinuar.setEnabled(false);
         btnContinuar.addActionListener(new java.awt.event.ActionListener() {
@@ -209,6 +216,7 @@ public enum dificultadLabel{PREGUNTAS_FACILES,PREGUNTAS_MEDIAS,PREGUNTAS_DIFICIL
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel1.setBackground(new java.awt.Color(240, 206, 220));
         jLabel1.setFont(new java.awt.Font("Palatino Linotype", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Preguntas Fáciles");
@@ -236,30 +244,31 @@ public enum dificultadLabel{PREGUNTAS_FACILES,PREGUNTAS_MEDIAS,PREGUNTAS_DIFICIL
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnContinuar)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(preguntaLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addGap(33, 33, 33)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(op2)
-                                        .addComponent(op1)
-                                        .addComponent(op3)
-                                        .addComponent(op4))))))
+                        .addGap(21, 21, 21)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(btnContinuar)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(preguntaLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                            .addGap(33, 33, 33)
+                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(op4)
+                                                .addComponent(op1)
+                                                .addComponent(op3)
+                                                .addComponent(op2))))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel3))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel3)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnSiguiente)
-                .addGap(198, 198, 198))
+                        .addGap(203, 203, 203)
+                        .addComponent(btnSiguiente)))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -271,19 +280,19 @@ public enum dificultadLabel{PREGUNTAS_FACILES,PREGUNTAS_MEDIAS,PREGUNTAS_DIFICIL
                     .addComponent(jLabel3))
                 .addGap(80, 80, 80)
                 .addComponent(preguntaLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(28, 28, 28)
                 .addComponent(op1)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(op2)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(op3)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(op4)
-                .addGap(26, 26, 26)
-                .addComponent(btnSiguiente)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnSiguiente)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnContinuar)
-                .addGap(167, 167, 167))
+                .addGap(89, 89, 89))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
