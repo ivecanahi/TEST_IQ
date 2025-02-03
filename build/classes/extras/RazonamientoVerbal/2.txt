@@ -1,0 +1,5 @@
+¿Qué palabra no pertenece al grupo? [Casa, Edificio, Árbol, Cabaña]@a) Casa@b) Edificio@c) ÁrbolÆ@d) Cabaña
+Si 'pluma' es a 'escribir', entonces 'martillo' es a...@a) Construir@b) Reparar@c) GolpearÆ@d) Martillo
+¿Cuál es el significado de la palabra 'empático'?@a) Cruel@b) ComprensivoÆ@c) Apático@d) Egoísta
+¿Qué palabra es un antónimo de 'sincero'?@a) Auténtico@b) DeshonestoÆ@c) Abierto@d) Franco
+¿Qué palabra completa la frase: La paciencia es una virtud de los ______?@a) SabiosÆ@b) Valientes@c) Felices@d) Pacientes
